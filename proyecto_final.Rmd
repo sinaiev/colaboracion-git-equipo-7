@@ -17,3 +17,25 @@ library(ggplot2)
 
 mis_datos <- readr::read_csv("datos_proyecto.csv")
 ```
+
+```{r}
+# Colaborador 1
+ 
+subconjuntos <- unique(mis_datos$subconjunto)
+ 
+mis_datos_calculo <- data.frame()
+ 
+for(i in subconjuntos) {
+  mis_datos_i <- mis_datos %>%
+    filter(subconjunto == i) %>%
+    summarise(media_x = mean(x),
+              media_y = mean(y),
+              sd_x = sd(x),
+              sd_y = sd(y),
+              cor_xy = cor(x, y, method = "pearson")) %>%
+    mutate(subconjunto = i)
+ 
+  mis_datos_calculo <- rbind(mis_datos_calculo,mis_datos_i)
+}
+mis_datos_calculo
+```
