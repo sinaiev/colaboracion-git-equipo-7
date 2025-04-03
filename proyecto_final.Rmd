@@ -39,3 +39,15 @@ for(i in subconjuntos) {
 }
 mis_datos_calculo
 ```
+
+# Colaborador 2
+
++ Desde su máquina crear chunks de código R en el archivo "proyecto_final.Rmd" (que obtuvo del Administrador) que calculen la media de x, la media de y, la desviación estándar de x, la desviación estándar de y, la correlación de Pearson entre x y y, PARA CADA SUBCONJUNTO, usando verbos de la librería {dplyr}. 
+
++ Primero solicitar que agrupe los datos por subconjunto con dplyr::group_by(), y después que calcule mean, sd y corr con dplyr::sumarise ()
+```{r}
+mis_datos |>
+  dplyr::group_by (subconjunto) |>
+  dplyr::summarise( media_x= mean(x), media_y=mean(y), desvest_x = sd(x), desvest_y = sd(y), correlación=cor(x, y, method = "pearson")
+  )
+```
