@@ -1,14 +1,14 @@
 ---
 title: "Proyecto final módulo 1"
-author: "Equipo - n"
+author: "Equipo - 7"
 output: html_document
 ---
 
 # Integrantes:
 
-+ Integrante 1. Rol: Administrador
-+ Integrante 2. Rol: Colaborador 1
-+ Integrante 3. Rol: Colaborador 2
++ Integrante 1. Rol: Sinaí Espinosa
++ Integrante 2. Rol: Isaac Mejia Montes de Oca
++ Integrante 3. Rol: Reyna Suzuky Pinto González
 
 ```{r}
 library(dplyr)
