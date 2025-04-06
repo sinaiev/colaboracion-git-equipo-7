@@ -51,3 +51,12 @@ mis_datos |>
   dplyr::summarise( media_x= mean(x), media_y=mean(y), desvest_x = sd(x), desvest_y = sd(y), correlación=cor(x, y, method = "pearson")
   )
 ```
+
+```{r}
+# Administrador
+ggplot(mis_datos)+
+  geom_point(aes(x = x,
+                 y = y))+
+  facet_wrap(vars(subconjunto)) +
+  theme_light()
+```
