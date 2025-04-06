@@ -60,3 +60,5 @@ ggplot(mis_datos)+
   facet_wrap(vars(subconjunto)) +
   theme_light()
 ```
++ El colaborador 1 debe ejecutar el código actualizado y dar conclusiones sobre cada uno de los subconjuntos de datos
+Los subconjuntos de datos tienen una media y desviación estandar prácticamente igual de cada variable y la correlaciónentre sus variables es la misma, pero al graficar se puede observar que la dispersión de los datos es completamente diferete. Lo que podemos consluir es que la media y desviación estantar, asi como la correlación entre las variables, no sonmedidas que nos puedan decir sobre la dispersión de los datos, se requiere información adicional para conocer como se dispersan los datos.
